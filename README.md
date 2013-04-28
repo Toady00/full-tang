@@ -1,4 +1,4 @@
-# Full::Tang
+# FullTang
 
 TODO: Write a gem description
 
