@@ -1,5 +1,10 @@
 # FullTang
 
+## Status
+[![Build Status](https://travis-ci.org/Toady00/full-tang.png)](https://travis-ci.org/Toady00/full-tang)
+[![Dependency Status](https://gemnasium.com/Toady00/full-tang.png)](https://gemnasium.com/Toady00/full-tang)
+[![Code Climate](https://codeclimate.com/github/Toady00/full-tang.png)](https://codeclimate.com/github/Toady00/full-tang)
+
 TODO: Write a gem description
 
 ## Installation
