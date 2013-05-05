@@ -1,5 +1,4 @@
-require 'full_tang/core_ext/hash'
-require 'timecop'
+require 'spec_helper'
 
 describe Hash do
   before(:each) do

@@ -1,13 +1,12 @@
-require 'full_tang/core_ext/string'
-
-module Ace
-  module Base
-    class Case
-    end
-  end
-end
+require 'spec_helper'
 
 describe String do
+  before(:all) do
+    Ace = Module.new
+    Ace::Base = Module.new
+    Ace::Base::Case = Class.new
+  end
+
   describe '#constantize' do
     before(:each) do
       @string_consts = {
