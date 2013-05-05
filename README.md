@@ -1,11 +1,10 @@
-# FullTang
-
-## Status
 [![Build Status](https://travis-ci.org/Toady00/full-tang.png)](https://travis-ci.org/Toady00/full-tang)
 [![Dependency Status](https://gemnasium.com/Toady00/full-tang.png)](https://gemnasium.com/Toady00/full-tang)
 [![Code Climate](https://codeclimate.com/github/Toady00/full-tang.png)](https://codeclimate.com/github/Toady00/full-tang)
 
-TODO: Write a gem description
+# FullTang
+
+This gem is in very early development. It is intended to be a Chef Server API client, that works across different Ruby interpreters (JRuby support is a requirement).
 
 ## Installation
 
@@ -23,7 +22,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+The intended API will look something like this:
+
+````ruby
+FullTang.setup do |config|
+  config.server_url  = "https://example.com"
+  config.client_key  = '~/.chef/admin.pem'
+  config.client_name = 'admin'
+end
+
+client = FullTang.client
+client.roles
+client.role(name: "role_name")
+# etc
+````
+
+As stated above, Full-Tang is still in early development and subject to drastic changes.
 
 ## Contributing
 
